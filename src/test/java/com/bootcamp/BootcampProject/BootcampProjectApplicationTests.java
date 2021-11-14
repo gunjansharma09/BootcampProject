@@ -29,9 +29,6 @@ class BootcampProjectApplicationTests {
 	@Autowired
 	AddressRepository addressRepository;
 
-	/*@Autowired
-	CartRepository cartRepository;
-*/
 	@Autowired
 	CategoryRepository categoryRepository;
 
@@ -41,23 +38,6 @@ class BootcampProjectApplicationTests {
 	@Autowired
 	CategoryMetadataFieldValuesRepository categoryMetadataFieldValuesRepository;
 
-	/*@Autowired
-	OrderRepository orderRepository;
-
-	@Autowired
-	OrderProductRepository orderProductRepository;
-
-	@Autowired
-	OrderStatusRepository orderStatusRepository;
-
-	@Autowired
-	ProductRepository productRepository;
-
-	@Autowired
-	ProductReviewRepository productReviewRepository;
-
-	@Autowired
-	ProductVariationRepository productVariationRepository;*/
 
 	@Autowired
 	SellerRepository sellerRepository;
@@ -69,9 +49,9 @@ class BootcampProjectApplicationTests {
 	@Test
 	void createUserAdmin(){
 		User user = new User();
-		user.setFirstName("Ankit");
+		user.setFirstName("Gunjan");
 		user.setLastName("sharma");
-		user.setEmail("sharma1ankit@gmail.com");
+		user.setEmail("sharma1gunjan@gmail.com");
 		user.setPassword(bCryptPasswordEncoder.encode("9090"));
 		user.setActive(true);
 		ArrayList<Role> role = new ArrayList<>();
@@ -112,7 +92,7 @@ class BootcampProjectApplicationTests {
 	void createUserSeller(){
 		Seller seller = new Seller();
 		seller.setCompanyContactNo("9711843254");
-		seller.setCompanyName("Indian Enterprises");
+		seller.setCompanyName("To The New");
 		seller.setGst("ADCF12909287");
 		Address address = new Address();
 		User user = new User();
@@ -123,9 +103,9 @@ class BootcampProjectApplicationTests {
 		address.setZipcode(110041);
 		address.setLabel("company");
 		user.addAddresses(address);
-		user.setFirstName("Deepak");
-		user.setLastName("saxeena");
-		user.setEmail("deepaksaxeena@gmail.com");
+		user.setFirstName("Himani");
+		user.setLastName("sharma");
+		user.setEmail("himanisharma@gmail.com");
 		user.setPassword(bCryptPasswordEncoder.encode("9090@ds"));
 		ArrayList<Role> role = new ArrayList<>();
 		Role role1 = new Role();

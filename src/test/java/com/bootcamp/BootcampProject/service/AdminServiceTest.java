@@ -1,3 +1,4 @@
+/*
 package com.bootcamp.BootcampProject.service;
 
 import org.junit.jupiter.api.Test;
@@ -9,4 +10,4 @@ class AdminServiceTest {
     @Test
     void activateUser() {
     }
-}
+}*/
